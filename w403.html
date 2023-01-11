@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .textright{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <input class="center" type="number"id= "a"value=""><br>
+    <input class="center" type="number"id= "b"value=""><br>
+    <input class="center" type="number"id= "c"value=""><br>
+    <button onclick="calcuate()">ตอบ</button>
+
+
+    <script>
+        function calcuate(){
+            let a = document.getElementById("a")
+            let b = document.getElementById("b")
+            let c = document.getElementById("c")
+            let sum =  parseInt(a.value) + parseInt(b.value);
+            c.value = sum
+        }
+    </script>
+
+</body>
+</html>

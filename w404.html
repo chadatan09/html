@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;1,300&family=Mali&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body {
+    font-family: 'Mali', cursive;
+    font-weight: 200;
+    
+}
+.myColor{
+    color: rgb(189, 98, 14);
+}
+.mycolor:hover{
+    color: blue;
+}
+
+</style>
+ 
+    <h1> สวัสดี ชฎาธาน </h1>
+    <h2> ยินดีต้อนรับสู่โลกคอมพิวเตอร์</h2>
+   
+    <button onclick="addPic()">
+        <i class="fa-duotone fa-comments fa"></i> 
+        สร้างรูป
+        </button>
+    <button id="delPic();">ลบรูป</button>
+    <hr>
+    <img src="https://picsum.photos/200/300?random=1" alt="">
+    <script>
+        let butDel =document.querySelector('#delPic')
+        btnDel.addEventlistener('click',() =>{    
+        }
+        function delPic(){
+            let body = document.querySelector('body');
+            body.removeAttribute(body.lastChild()
+        }
+        function addPic(){
+        let body = document.querySelector('body');
+        let image = document.createElement('img');
+        image.sre ="https://picsum.photos/200/300?random= + Math.floor(Math.random()*100) +1
+        body.appendChild(image)
+        }
+    </script>
+</body>
+</html>

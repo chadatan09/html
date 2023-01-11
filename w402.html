@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            width: 100px;
+            height: 40px;
+            color:blue
+            bachground-color:white;
+            border:1px solid black;
+            border-radius: 5px;
+        }
+        .btn:hover{
+            color: pink;
+            backgronud: black
+        }
+      
+    </style>
+</head>
+<body>
+    <h1 id="zack">Hello Computer</h1>
+    <button class="btn" onclick="changeText()">Change Text</button>
+    <hr>
+    <input type="text" name="" id="Input text">
+    <button onclick="showText()">OK</button>
+    <h1 id="show_text"></h1>
+    <hr>
+    
+    <script>
+        function changeText(){
+            var myText =document.getElementById("zack")
+            myText.innerHTML = 'Bye Bye Computer';
+           // myText.setAttribute ("style","color : pink;")
+            myText.style.color ="magenta"
+        }
+
+
+        function showText(){
+               let getText =document.getElementById('Input text')
+               document.getElementById("show_text").innerHTML = getText.value;
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>
